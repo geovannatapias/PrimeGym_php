@@ -1,0 +1,14 @@
+# Ignore system files
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore OS files
+Desktop.ini

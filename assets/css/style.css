@@ -1,0 +1,202 @@
+
+:root {
+    --pure-black: #090909;
+    --pure-dark-grey: #535353;
+    --pure-orange: #F08223;
+    --pure-yellow: #EDCC36;
+    --pure-light: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: var(--pure-black);
+    background-image: url('/Somativa_2/assets/img/home1.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: rgba(43, 43, 43, 0.8);
+    color: #fff;
+    display: flex !important; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    backdrop-filter: blur(5px);
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #130b0f;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5rem; color: var(--pure-black); }
+
+label {
+    font-size: 1rem;
+    color: var(--pure-dark-grey);
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=datetime-local],
+textarea,
+.w3-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--pure-dark-grey);
+}
+
+button,
+.btn-primary,
+.btn-danger,
+.btn-link {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px; /* mesmo padding para todos */
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    border: 1px solid #d66f1d;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--pure-orange);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #d66f1d;
+}
+
+.btn-link {
+    background-color: var(--pure-orange);
+    color: white;
+    
+}
+
+.btn-link:hover {
+    background-color: #d66f1d;
+}
+
+.btn-danger {
+    background-color: #222;
+    color: white; 
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+    border: 1px solid #333; 
+}
+.btn-danger:hover {
+    background-color: #222; 
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.form-container {
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.table-container {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 1200px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: var(--pure-orange);
+    color: white;
+}
+
+.styled-table tr:hover {
+    background-color: rgba(240,240,240,0.8);
+}
+
+a {
+    text-decoration: none;
+    color: var(--pure-dark-grey);
+}
+a:hover {
+    color: var(--pure-orange);
+}
+
+@media (max-width: 768px) {
+    .styled-table th,
+    .styled-table td {
+        padding: 8px;
+    }
+}
